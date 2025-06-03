@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TransActiva</string>
+    <string name="login_signup_message">¿No tienes una cuenta? <font color="#FF0000">Sign Up</font></string>
+</resources>

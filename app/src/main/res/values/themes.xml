@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base de la app: Material 2 (correcto) -->
+    <style name="Base.Theme.TransActiva" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Puedes personalizar aquí colores si quieres -->
+    </style>
+
+    <!-- Tema principal de la app -->
+    <style name="Theme.TransActiva" parent="Base.Theme.TransActiva" />
+
+    <!-- Tema del Splash -->
+    <style name="Theme.APISplashScreen" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/Blue</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo</item>
+        <item name="windowSplashScreenAnimationDuration">500</item>
+        <item name="postSplashScreenTheme">@style/Base.Theme.TransActiva</item>
+    </style>
+
+</resources>

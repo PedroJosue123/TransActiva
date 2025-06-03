@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="top|center_horizontal"
+        android:fitsSystemWindows="true">
+
+        <!-- HEADER -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:paddingBottom="8dp"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:id="@+id/btnMenu"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_menu"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="Menú" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/logo_transactiva_icon"
+                    android:contentDescription="Logo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TRANSACTIVA"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- TÍTULO -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirmar operación"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#003366"
+            android:layout_marginBottom="12dp" />
+
+        <!-- MONTO -->
+        <TextView
+            android:id="@+id/textMonto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S/ 2500.00"
+            android:textSize="28sp"
+            android:textColor="#003366"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monto total"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="32dp" />
+
+        <!-- DESTINO -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Destino"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txtProveedor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proveedor: Quesos del Norte SAC"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_marginBottom="12dp" />
+
+        <!-- PRODUCTO -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Producto"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txtProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Caja de leche evaporada x3"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_marginBottom="12dp" />
+
+        <!-- ORIGEN -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Origen"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/editOrigen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingresa cuenta bancaria"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_border_payment"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:layout_marginBottom="24dp" />
+
+        <!-- MENSAJE DE SEGURIDAD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EAF3FF"
+            android:padding="16dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="32dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_lock_lock"
+                android:layout_marginEnd="12dp"
+                app:tint="#003366" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Esta operación se confirmará con tu clave de seguridad"
+                android:textSize="14sp"
+                android:textColor="#003366" />
+        </LinearLayout>
+
+        <!-- BOTÓN CONFIRMAR -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnConfirmar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONFIRMAR"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            app:cornerRadius="32dp"
+            android:layout_marginTop="32dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            style="@style/NoStyleButton"
+            android:backgroundTint="#003366" />
+
+    </LinearLayout>
+</ScrollView>

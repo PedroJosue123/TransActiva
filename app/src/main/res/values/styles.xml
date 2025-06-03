@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="PinKeyboardButton" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="backgroundTint">#004D7A</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="cornerRadius">8dp</item> <item name="android:elevation">0dp</item>
+    </style>
+    <style name="PinGridButton">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:backgroundTint">@null</item> <!-- ← esto es CLAVE -->
+        <item name="android:background">@drawable/pin_button_background</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="PinTextButton">
+        <item name="android:layout_width">90dp</item> <!-- antes 72dp -->
+        <item name="android:layout_height">90dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">28sp</item> <!-- más grande -->
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/pin_button_background</item>
+    </style>
+    <style name="NoStyleButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@null</item>
+        <item name="rippleColor">@android:color/transparent</item>
+    </style>
+
+
+
+</resources>
